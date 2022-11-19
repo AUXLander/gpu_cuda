@@ -1,0 +1,1 @@
+F:\UserData\Projects\gpu_cuda\hello_cuda\x64\Debug\hello_cuda.exe
