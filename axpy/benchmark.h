@@ -51,8 +51,9 @@ public:
         kernel<T>::finalize(size, a, x.data(), 1, y.data(), 1);
 
         auto duration = std::chrono::duration_cast<std::chrono::microseconds>(end - begin);
+		auto time_ms  = static_cast<double>(duration.count()) / 1000.0;
 
-        return static_cast<double>(duration.count()) / static_cast<double>(number_of_tests);
+        return time_ms / static_cast<double>(number_of_tests);
     }
 
     void run(size_t size, size_t number_of_tests)
@@ -69,6 +70,6 @@ public:
             std::cout << "DOUBLE";
         }
 
-        std::cout << " " << name() << ": " << mark(size, number_of_tests) / 1000.0 << " ms" << std::endl;
+        std::cout << " " << name() << ": " << mark(size, number_of_tests) << " ms" << std::endl;
     }
 };
