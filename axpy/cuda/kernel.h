@@ -39,6 +39,8 @@ struct axpy_cuda
         {
             kernel_axpy_double<<<grid_size, BLOCK_SIZE>>>(n, a, device_x, incx, device_y, incy);
         }
+
+        cudaDeviceSynchronize();
     }
 
     inline void finalize(size_t n, T a, T* x, size_t incx, T* y, size_t incy)

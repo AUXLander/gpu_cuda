@@ -6,7 +6,7 @@
 
 int main()
 {
-    const std::vector<size_t> size_set = { 50'000'000, 100'000'000, 200'000'000, 300'000'000, 400'000'000, 500'000'000};
+    const std::vector<size_t> size_set = { 100'000'000, 200'000'000, 300'000'000 };
 
     // const std::vector<size_t> size_set = { 1024'0 };
 

@@ -1,0 +1,61 @@
+Set size = 100000000
+Run for FLOAT  default CPU single thread implementation: 70.4801 ms
+Run for DOUBLE default CPU single thread implementation: 136.525 ms
+
+Run for FLOAT  advanced CPU OpenMP multi thread implementation: 68.7165 ms
+Run for DOUBLE advanced CPU OpenMP multi thread implementation: 135.689 ms
+
+Run for FLOAT  advanced GPU CUDA multi thread implementation (block size 8): 36.5917 ms
+Run for FLOAT  advanced GPU CUDA multi thread implementation (block size 16): 18.2048 ms
+Run for FLOAT  advanced GPU CUDA multi thread implementation (block size 32): 9.90738 ms
+Run for FLOAT  advanced GPU CUDA multi thread implementation (block size 64): 8.03603 ms
+Run for FLOAT  advanced GPU CUDA multi thread implementation (block size 128): 7.95741 ms
+Run for FLOAT  advanced GPU CUDA multi thread implementation (block size 256): 7.97264 ms
+Run for DOUBLE advanced GPU CUDA multi thread implementation (block size 8): 37.0885 ms
+Run for DOUBLE advanced GPU CUDA multi thread implementation (block size 16): 19.6337 ms
+Run for DOUBLE advanced GPU CUDA multi thread implementation (block size 32): 15.8927 ms
+Run for DOUBLE advanced GPU CUDA multi thread implementation (block size 64): 15.7573 ms
+Run for DOUBLE advanced GPU CUDA multi thread implementation (block size 128): 15.7547 ms
+Run for DOUBLE advanced GPU CUDA multi thread implementation (block size 256): 15.76 ms
+
+
+Set size = 200000000
+Run for FLOAT  default CPU single thread implementation: 143.935 ms
+Run for DOUBLE default CPU single thread implementation: 271.118 ms
+
+Run for FLOAT  advanced CPU OpenMP multi thread implementation: 132.231 ms
+Run for DOUBLE advanced CPU OpenMP multi thread implementation: 271.946 ms
+
+Run for FLOAT  advanced GPU CUDA multi thread implementation (block size 8): 72.5864 ms
+Run for FLOAT  advanced GPU CUDA multi thread implementation (block size 16): 36.5211 ms
+Run for FLOAT  advanced GPU CUDA multi thread implementation (block size 32): 19.5166 ms
+Run for FLOAT  advanced GPU CUDA multi thread implementation (block size 64): 16.0032 ms
+Run for FLOAT  advanced GPU CUDA multi thread implementation (block size 128): 15.8706 ms
+Run for FLOAT  advanced GPU CUDA multi thread implementation (block size 256): 16.0232 ms
+Run for DOUBLE advanced GPU CUDA multi thread implementation (block size 8): 0.02821 ms
+Run for DOUBLE advanced GPU CUDA multi thread implementation (block size 16): 0.00026 ms
+Run for DOUBLE advanced GPU CUDA multi thread implementation (block size 32): 0.0003 ms
+Run for DOUBLE advanced GPU CUDA multi thread implementation (block size 64): 0.00025 ms
+Run for DOUBLE advanced GPU CUDA multi thread implementation (block size 128): 0.00025 ms
+Run for DOUBLE advanced GPU CUDA multi thread implementation (block size 256): 0.00029 ms
+
+
+Set size = 300000000
+Run for FLOAT  default CPU single thread implementation: 215.791 ms
+Run for DOUBLE default CPU single thread implementation: 379.668 ms
+
+Run for FLOAT  advanced CPU OpenMP multi thread implementation: 206.046 ms
+Run for DOUBLE advanced CPU OpenMP multi thread implementation: 366.443 ms
+
+Run for FLOAT  advanced GPU CUDA multi thread implementation (block size 8): 0.00027 ms
+Run for FLOAT  advanced GPU CUDA multi thread implementation (block size 16): 0.00025 ms
+Run for FLOAT  advanced GPU CUDA multi thread implementation (block size 32): 0.00026 ms
+Run for FLOAT  advanced GPU CUDA multi thread implementation (block size 64): 0.00026 ms
+Run for FLOAT  advanced GPU CUDA multi thread implementation (block size 128): 0.00029 ms
+Run for FLOAT  advanced GPU CUDA multi thread implementation (block size 256): 0.00025 ms
+Run for DOUBLE advanced GPU CUDA multi thread implementation (block size 8): 0.00025 ms
+Run for DOUBLE advanced GPU CUDA multi thread implementation (block size 16): 0.00029 ms
+Run for DOUBLE advanced GPU CUDA multi thread implementation (block size 32): 0.00025 ms
+Run for DOUBLE advanced GPU CUDA multi thread implementation (block size 64): 0.00025 ms
+Run for DOUBLE advanced GPU CUDA multi thread implementation (block size 128): 0.00025 ms
+Run for DOUBLE advanced GPU CUDA multi thread implementation (block size 256): 0.00025 ms

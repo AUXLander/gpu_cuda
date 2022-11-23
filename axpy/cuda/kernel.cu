@@ -1,23 +1,23 @@
 #include "kernel.h"
 #include "../benchmark.h"
 
-__global__ void kernel_axpy_float(size_t n, float alpha, float *x, size_t incx, float *y, size_t incy)
+__global__ void kernel_axpy_float(size_t n, float a, float *x, size_t incx, float *y, size_t incy)
 {
     auto idx = blockIdx.x*blockDim.x+threadIdx.x;
 
     if (idx < n) 
     {
-        y[idx * incy] += alpha * x[idx *incx];
+        y[idx * incy] += a * x[idx *incx];
     }
 }
 
-__global__ void kernel_axpy_double(size_t n, double alpha, double *x, size_t incx, double *y, size_t incy)
+__global__ void kernel_axpy_double(size_t n, double a, double *x, size_t incx, double *y, size_t incy)
 {
     auto idx = blockIdx.x*blockDim.x+threadIdx.x;
 
     if (idx < n) 
     {
-        y[idx * incy] += alpha * x[idx *incx];
+        y[idx * incy] += a * x[idx *incx];
     }
 }
 
